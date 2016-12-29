@@ -1,8 +1,0 @@
-diff a/koneksi.php b/koneksi.php	(rejected hunks)
-@@ -0,4 +0,5 @@
- $name = "dbmhs";	//nama database
- 
- $koneksi = mysql_connect($host, $user, $pass) or die("Koneksi ke database gagal!");
-+mysql_select_db($name, $koneksi) or die("Tidak ada database yang dipilih!");
- ?>
-\ No newline at end of file
