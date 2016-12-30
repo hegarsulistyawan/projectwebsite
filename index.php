@@ -1,12 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>KIOS MALASNGODING</title>
+	<title>Apotek Helude-tik</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="assets/js/jquery-ui/jquery-ui.css">
-	<script type="text/javascript" src="assets/js/jquery.js"></script>
-	<script type="text/javascript" src="assets/js/bootstrap.js"></script>
-	<script type="text/javascript" src="assets/js/jquery-ui/jquery-ui.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<?php include 'admin/config.php'; ?>
 	<style type="text/css">
 	.kotak{	
@@ -19,7 +16,7 @@
 	</style>
 </head>
 <body>	
-	<div class="container">
+<div class="container">
 		<?php 
 		if(isset($_GET['pesan'])){
 			if($_GET['pesan'] == "gagal"){
@@ -27,24 +24,29 @@
 			}
 		}
 		?>
-		<div class="panel panel-default">
-			<form action="login_act.php" method="post">
-				<div class="col-md-4 col-md-offset-4 kotak">
-					<h3>Silahkan Login ..</h3>
+		
+	<div class="panel panel-default">
+		<div class="col-md-4 col-md-offset-4 kotak">
+			<div class="module form-module">
+				<div class="toggle"><i class="fa fa-times fa-pencil"></i>
+				</div>
+				<div class="form">
+					<h2>Login to your account</h2>
+					<form name="formlogin" action="login_act.php" method="post">
 					<div class="input-group">
 						<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
-						<input type="text" class="form-control" placeholder="Username" name="uname">
-					</div>
+						<input type="text" class="form-control" placeholder="Username" name="uname"/>
+					</div><br>
 					<div class="input-group">
 						<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
 						<input type="password" class="form-control" placeholder="Password" name="pass">
-					</div>
-					<div class="input-group">			
-						<input type="submit" class="btn btn-primary" value="Login">
-					</div>
+					</div><br>
+					<button value="login">Login</button>
+					</form>
 				</div>
-			</form>
+			</div>	
 		</div>
 	</div>
+</div>
 </body>
 </html>
