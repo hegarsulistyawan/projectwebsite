@@ -1,5 +1,5 @@
 <?php
 if(!isset($_SESSION['uname'])){
-    header("location:index.php
+    	header("location:index.php");
 }
 ?>
