@@ -9,6 +9,10 @@
 		<th width="3%">Id</th>
 		<th width="25%">Nama</th>
 		<th width="25%">Jenis</th>
+		<th width="25%">Supplier</th>
+		<th width="25%">Modal</th>
+		<th width="25%">Harga</th>
+		<th width="25%">Jumlah</th>
 	</tr>
 <?php
 include "config.php";
@@ -18,6 +22,10 @@ echo"<tr>
 <td>$data[id]</td>
 <td>$data[nama]</td>
 <td>$data[jenis]</td>
+<td>$data[suplier]</td>
+<td>$data[modal]</td>
+<td>$data[harga]</td>
+<td>$data[jumlah]</td>
 </tr>";
 }?>
 </table>
