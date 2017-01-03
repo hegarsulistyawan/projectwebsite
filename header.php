@@ -37,7 +37,7 @@
 
 		<div class="row"></div>
 		<ul class="nav nav-pills nav-stacked">
-			<li class="active"><a href="index.php"><span class="glyphicon glyphicon-home"></span>  Beranda</a></li>			
+			<li class="active"><a href="homepage.php"><span class="glyphicon glyphicon-home"></span>  Beranda</a></li>			
 			<li><a href="barang.php"><span class="glyphicon glyphicon-briefcase"></span>  Data Obat</a></li>
 		</ul>
 	</div>
