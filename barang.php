@@ -1,8 +1,8 @@
 <?php include 'header.php'; ?>
 <h3><span class="glyphicon glyphicon-briefcase"></span>  Data Obat</h3>
 <div class="col-md-12">
-	<button style="margin-bottom:20px" data-toggle="modal" data-target="#myModal" class="btn btn-info col-md-2"><span class="glyphicon glyphicon-plus"></span>Tambah Barang</button>
-	<a style="margin-bottom:10px" href="preview.php" target="_blank" class="btn btn-default pull-right"><span class='glyphicon glyphicon-print'></span>  Cetak</a>
+	<button style="margin-bottom:20px" data-toggle="modal" data-target="#myModal" class="btn btn-success col-md-2"><span class="glyphicon glyphicon-plus"></span>Tambah Barang</button>
+	<a style="margin-bottom:10px" href="preview.php" target="_blank" class="btn btn-success pull-right"><span class='glyphicon glyphicon-print'></span>  Cetak</a>
 </div>
 <form action="cari_act.php" method="get">
 	<div class="input-group col-md-5 col-md-offset-7">
@@ -11,15 +11,17 @@
 	</div>
 </form>
 <br/>
-<table class="table table-hover">
-	<tr>
-		<th class="col-md-1">No</th>
+<table class="table table-inverse">
+	<thead>
+	<tr class="bg-info">
+		<th class="col-md-1" >No</th>
 		<th class="col-md-2">Nama Barang</th>
 		<th class="col-md-2">Modal</th>
 		<th class="col-md-2">Harga Jual</th>
 		<th class="col-md-1">Jumlah</th>
 		<th class="col-md-3">Opsi</th>
 	</tr>
+	</thead>
 	<?php 
 	if(isset($_GET['cari'])){
 		$cari=mysql_real_escape_string($_GET['cari']);
@@ -38,9 +40,9 @@
 			<td>Rp.<?php echo number_format($b['harga']) ?>,-</td>
 			<td><?php echo $b['jumlah'] ?></td>
 			<td>
-				<a href="det_barang.php?id=<?php echo $b['id']; ?>" class="btn btn-info">Detail</a>
-				<a href="edit.php?id=<?php echo $b['id']; ?>" class="btn btn-warning">Edit</a>
-				<a onclick="if(confirm('Apakah anda yakin ingin menghapus data ini ??')){ location.href='hapus.php?id=<?php echo $b['id']; ?>' }" class="btn btn-danger">Hapus</a>
+				<a href="det_barang.php?id=<?php echo $b['id']; ?>" class="btn btn-default">Detail</a>
+				<a href="edit.php?id=<?php echo $b['id']; ?>" class="btn btn-default">Edit</a>
+				<a onclick="if(confirm('Apakah anda yakin ingin menghapus data ini ??')){ location.href='hapus.php?id=<?php echo $b['id']; ?>' }" class="btn btn-default">Hapus</a>
 			</td>
 		</tr>		
 		<?php 
@@ -86,7 +88,7 @@
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">Batal</button>
-					<input type="submit" class="btn btn-primary" value="Simpan">
+					<input type="submit" class="btn btn-success" value="Simpan">
 				</div>
 			</form>
 		</div>

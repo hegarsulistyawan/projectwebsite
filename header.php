@@ -12,7 +12,7 @@
 	<script type="text/javascript" src="assets/js/bootstrap.js"></script>
 </head>
 <body>
-	<div class="navbar navbar-default">
+	<div class="navbar-inverse">
 		<div class="container-fluid">
 			<div class="navbar-header">
 				<a href="#" class="navbar-brand">Apotek Helude-Tik</a>
@@ -30,16 +30,15 @@
 					<li><a href="#">Hy , <?php echo $_SESSION['uname']  ?>&nbsp&nbsp<span class="glyphicon glyphicon-user"></span></a></li>
 				</ul>
 			</div>
-		</div>
+		</div><hr>
 	</div>
 
 	<div class="col-md-2">
 
 		<div class="row"></div>
 		<ul class="nav nav-pills nav-stacked">
-			<li class="active"><a href="index.php"><span class="glyphicon glyphicon-home"></span>  Beranda</a></li>			
+			<li class="active"><a href="homepage.php"><span class="glyphicon glyphicon-home"></span>  Beranda</a></li>			
 			<li><a href="barang.php"><span class="glyphicon glyphicon-briefcase"></span>  Data Obat</a></li>
-			<li><a href="barang_laku.php"><span class="glyphicon glyphicon-briefcase"></span>  Entry Penjualan Obat</a></li> 
 		</ul>
 	</div>
 	<div class="col-md-10">
