@@ -1,13 +1,13 @@
 <?php include 'header.php'; ?>
 <h3><span class="glyphicon glyphicon-briefcase"></span>  Data Obat</h3>
 <div class="col-md-12">
-	<button style="margin-bottom:20px" data-toggle="modal" data-target="#myModal" class="btn btn-success col-md-2"><span class="glyphicon glyphicon-plus"></span>Tambah Barang</button>
+	<button data-toggle="modal" data-target="#myModal" class="btn btn-success col-md-2"><span class="glyphicon glyphicon-plus"></span>Tambah Barang</button>
 	<a style="margin-bottom:10px" href="preview.php" target="_blank" class="btn btn-success pull-right"><span class='glyphicon glyphicon-print'></span>  Cetak</a>
 </div>
 <form action="cari_act.php" method="get">
 	<div class="input-group col-md-5 col-md-offset-7">
 		<span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-search"></span></span>
-		<input type="text" class="form-control" placeholder="Cari barang di sini .." aria-describedby="basic-addon1" name="cari">	
+		<input type="text" class="form-control" placeholder="Cari barang di sini .." name="cari">	
 	</div>
 </form>
 <br/>

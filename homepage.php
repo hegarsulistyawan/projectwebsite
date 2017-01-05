@@ -10,5 +10,5 @@ $a = mysql_query("select * from barang_laku");
     <h3>Aplikasi Penjualan Apotek Helude-tik</h3>
 	<h5>Selamat datang, di Aplikasi Penjualan Apotek Helude-tik</h5>
 </div>
-//
+
 

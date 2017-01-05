@@ -1,18 +1,22 @@
 <html>
 <head>
 <title>Apotek Helude-tik</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+	<script type="text/javascript" src="assets/js/jquery.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap.js"></script>
 </head>
 <body onLoad="window.print()">
-<h3 align="center">Laporan data Obat di Apotek Helude-tik</h3><hr><br>
-<table border="1" width="90%">
-	<tr>
-		<th width="3%">Id</th>
-		<th width="25%">Nama</th>
-		<th width="25%">Jenis</th>
-		<th width="25%">Supplier</th>
-		<th width="25%">Modal</th>
-		<th width="25%">Harga</th>
-		<th width="25%">Jumlah</th>
+<div class="container">
+<h3><u> Laporan data Obat di Apotek Helude-tik</u></h3><br>
+<table class="table table-inverse">
+	<tr class="bg-">
+		<th class="col-md-1">Id</th>
+		<th class="col-md-2">Nama</th>
+		<th class="col-md-2">Jenis</th>
+		<th class="col-md-2">Supplier</th>
+		<th class="col-md-3">Modal</th>
+		<th class="col-md-2">Harga</th>
+		<th class="col-md-2">Jumlah</th>
 	</tr>
 <?php
 include "config.php";
@@ -28,5 +32,6 @@ echo"<tr>
 <td>$data[jumlah]</td>
 </tr>";
 }?>
+</div>
 </table>
 </body>
