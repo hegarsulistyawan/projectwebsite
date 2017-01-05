@@ -15,7 +15,7 @@
 	<thead>
 	<tr class="bg-info">
 		<th class="col-md-1" >No</th>
-		<th class="col-md-2">Nama Barang</th>
+        <th class="col-md-2">Nama Barang</th>
 		<th class="col-md-2">Modal</th>
 		<th class="col-md-2">Harga Jual</th>
 		<th class="col-md-1">Jumlah</th>
