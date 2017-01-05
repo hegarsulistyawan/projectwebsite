@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 31, 2016 at 12:43 AM
+-- Generation Time: Jan 05, 2017 at 04:13 PM
 -- Server version: 10.1.16-MariaDB
 -- PHP Version: 5.5.38
 
@@ -66,32 +66,8 @@ INSERT INTO `barang` (`id`, `nama`, `jenis`, `suplier`, `modal`, `harga`, `jumla
 (17, 'Bisolfon', 'Botol', 'pt surga', 5000, 8000, 793, 10),
 (19, 'Nuriskin', 'Tablet', 'pt sido multp', 2000, 4000, 8, 24),
 (20, 'Paramex', 'Tablet', 'pt jamaika', 1000, 3000, 988, 1000),
-(21, 'Vicks44', 'Botol', 'pt senjaya', 2000, 4000, 895, 900);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `barang_laku`
---
-
-CREATE TABLE `barang_laku` (
-  `id` int(11) NOT NULL,
-  `tanggal` date NOT NULL,
-  `nama` text NOT NULL,
-  `jumlah` int(11) NOT NULL,
-  `harga` int(11) NOT NULL,
-  `total_harga` int(20) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `barang_laku`
---
-
-INSERT INTO `barang_laku` (`id`, `tanggal`, `nama`, `jumlah`, `harga`, `total_harga`) VALUES
-(64, '2016-02-20', 'Misagrip', 3, 6500, 19500),
-(65, '2016-02-21', 'Bisolfon', 1, 8000, 8000),
-(66, '2016-02-20', 'Nuriskin', 2, 4000, 8000),
-(67, '2016-02-23', 'Vicks44', 2, 4000, 8000);
+(21, 'Vicks44', 'Botol', 'pt senjaya', 2000, 4000, 895, 900),
+(23, 'Konidin', 'Tablet', 'Pt Senjaya', 4000, 5000, 20, 20);
 
 --
 -- Indexes for dumped tables
@@ -110,12 +86,6 @@ ALTER TABLE `barang`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `barang_laku`
---
-ALTER TABLE `barang_laku`
-  ADD PRIMARY KEY (`id`);
-
---
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -128,12 +98,7 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `barang`
 --
 ALTER TABLE `barang`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
---
--- AUTO_INCREMENT for table `barang_laku`
---
-ALTER TABLE `barang_laku`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=68;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
