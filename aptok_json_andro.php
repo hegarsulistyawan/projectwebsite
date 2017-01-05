@@ -11,7 +11,7 @@ while($data=mysql_fetch_assoc($query)){
     $agt["modal"] = $data["modal"];
     $agt["harga"] = $data["harga"];
     $agt["jumlah"] = $data["jumlah"];
-    array_push($response["barang"],$agt);s
+    array_push($response["barang"],$agt);
 }
 echo json_encode($response);
 ?>
