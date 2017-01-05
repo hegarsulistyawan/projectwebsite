@@ -12,7 +12,7 @@ if(isset($_GET['pesan'])){
 	}else if($pesan=="tdksama"){
 		echo "<div class='alert alert-warning'>Password yang anda masukkan tidak sesuai  !!     silahkan ulangi !! </div>";
 	}else if($pesan=="oke"){
-		echo "<div class='alert alert-success'>Password yang anda masukkan tidak sesuai  !!     silahkan ulangi !! </div>";
+		echo "<div class='alert alert-success'>Berhasil melakukan perubahan !</div>";
 	}
 }
 ?>
@@ -36,14 +36,8 @@ if(isset($_GET['pesan'])){
 			<input name="ulang" type="password" class="form-control" placeholder="Ulangi Password ..">
 		</div>	
 		<div class="form-group">
-			<label></label>
-			<input type="submit" class="btn btn-info" value="Simpan">
+			<input type="submit" class="btn btn-info" value="simpan">
 			<input type="reset" class="btn btn-danger" value="reset">
 		</div>																	
 	</form>
 </div>
-
-
-<?php 
-
-?>
