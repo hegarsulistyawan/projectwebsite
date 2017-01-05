@@ -9,7 +9,7 @@
 <div class="container">
 <h3><u> Laporan data Obat di Apotek Helude-tik</u></h3><br>
 <table class="table table-inverse">
-	<tr class="bg-">
+	<tr class="bg-primary">
 		<th class="col-md-1">Id</th>
 		<th class="col-md-2">Nama</th>
 		<th class="col-md-2">Jenis</th>
